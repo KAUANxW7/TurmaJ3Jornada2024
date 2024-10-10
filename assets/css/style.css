@@ -1,0 +1,42 @@
+/* Container básico com largura fixa e centralizado na página */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;               /* Define a largura do container */
+    margin: 0 auto;            /* Centraliza horizontalmente */
+    padding: 20px;             /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo */
+    border-radius: 10px;       /* Bordas arredondadas */
+    display: flex;             /* Utiliza flexbox para o layout */
+    justify-content: center;   /* Centraliza o conteúdo horizontalmente */
+    align-items: center;       /* Centraliza o conteúdo verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.content {
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #f1f1f1; /* Cor de fundo suave */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border-top: 1px solid #ccc; /* Linha superior para separação */
+}
+
+.footer-container {
+    max-width: 800px; /* Limita a largura para uma leitura mais fácil */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.highlight {
+    font-weight: bold; /* Destaca o nome */
+    color: #007bff; /* Cor azul para destaque */
+}
+
+.footer-note {
+    margin-top: 10px; /* Espaçamento acima do aviso de direitos autorais */
+    font-size: 0.9em; /* Tamanho de fonte menor para o aviso */
+    color: #666; /* Cor cinza para o texto secundário */
+}
