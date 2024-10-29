@@ -110,8 +110,4 @@ footer {
     color: #666;      
 }
 
-@media (max-width: 600px) {
-    .content > .card {
-        width: 100%; 
-    }
-}
+
