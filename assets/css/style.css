@@ -2,116 +2,139 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 80%;               
-    margin: 0 auto;          
-    padding: 20px;           
-    background-color: #f0f0f0; 
-    border-radius: 10px;     
-    justify-content: center;  
-    align-items: center;      
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Estilos para o conteúdo flexível e responsivo */
 .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-
-    font-family: cursive;
-
     font-size: 20px;
     color: #333;
 }
 
+/* Estilos para os cartões */
 .content > .card {
     display: flex;
-    position: relative;       
+    position: relative;
     width: 280px;
-    height: 750px;
+    height: 400px;
     justify-content: center;
     align-items: center;
     text-align: justify;
     background-color: #333;
-    margin: 10px;            
-    border-radius: 8px;      
-    transition: transform 0.3s; 
-    perspective: 1000px;    
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .content > .card:hover {
-    transform: scale(1.05);  
+    transform: scale(1.05);
 }
 
-.card__article__content {
-    position: absolute; 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; 
-    transition: opacity 0.3s; 
-}
-
-.card__article__content.hidden {
-    opacity: 0; 
-    pointer-events: none; 
-}
-
-.card__content__issue,
-.card__content__answer {
+/* Cabeçalho do conteúdo do cartão */
+.card__content-header {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; 
-    transition: transform 0.6s, opacity 0.6s; 
-    opacity: 0; /* Começa invisível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
 }
 
+.card__content-header.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Estilos para imagens no cabeçalho do cartão */
+.card__content-header > img {
+    width: 90%;
+    height: 175px; /* Ajustado para ocupar 25% da altura */
+    object-fit: contain; /* Ajusta a imagem para cobrir sem distorção */
+    border-radius: .8rem;
+}
+
+/* Estilos para perguntas e respostas */
+.card__content__issue,
 .card__content__answer {
-    top: 5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .card__content__issue {
-    transform: rotateY(0deg);  
+    transform: rotateY(0deg);
 }
 
 .card__content__answer {
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg);
 }
 
-.card.flipped .card__content__issue {
-    opacity: 1; /* Mostra a pergunta quando flipped */
+/* Estilos aplicados quando o cartão está virado */
+.card.flipped {
+    display: flex;
+    flex-direction: column; /* Define orientação em coluna para o estado "flipped" */
+    width: calc(280px - 1rem);
+    padding: 1rem;
+
+    font-size: 1rem;
+}
+
+.card.flipped .card__content__issue,
+.card.flipped .card__content__answer {
+    opacity: 1;
 }
 
 .card.flipped .card__content__answer {
-    opacity: 1; /* Mostra a resposta quando flipped */
-    transform: rotateY(0deg);   
+    transform: rotateY(0deg);
 }
 
+/* Estilos para o rodapé */
 footer {
-    background-color: #f1f1f1; 
-    padding: 20px;             
-    text-align: center;        
-    border-top: 1px solid #ccc; 
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
 
 .footer-container {
-    max-width: 800px; 
-    margin: 0 auto;   
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .highlight {
-    font-weight: bold; 
-    color: #007bff;   
+    font-weight: bold;
+    color: #007bff;
 }
 
 .footer-note {
-    margin-top: 10px; 
-    font-size: 0.9em; 
-    color: #666;      
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
 }
-
-
