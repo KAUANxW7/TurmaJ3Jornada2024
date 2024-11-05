@@ -5,33 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turma J - Cartões de Memorização</title>
 
+    <!-- Importa o arquivo CSS para estilizar o layout da página -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- HTML é uma linguagem de marcação usada para estruturar o conteúdo de páginas web, 
+    organizando textos, imagens, links e outros elementos de forma hierárquica. -->
+
+    <!-- Cabeçalho da página -->
     <header>
     </header>
-    <main class="container">
-        <h1>Cartões de Memorização</h1>
 
+    <!-- Área principal onde os cartões de memorização são exibidos -->
+    <main class="container">
+        <h1>Cartões de Memorização</h1> <!-- Título da página -->
+
+        <!-- Seção que contém todos os cartões de conteúdo -->
         <section class="content">
+            
+            <!-- Cada "article" representa um cartão individual com uma pergunta e resposta -->
             <article class="card">
+                <!-- Cabeçalho do cartão, incluindo o título e a imagem -->
                 <div class="card__content-header">
                     <h3>Python</h3>
-                    
                     <img src="./assets/images/python.jpeg" alt="Icone do Python">
                 </div>
+                
+                <!-- Parte do cartão que exibe a pergunta -->
                 <div class="card__content__issue">
                     <p>O que é o Python?</p>
                 </div>
+
+                <!-- Parte do cartão que exibe a resposta -->
                 <div class="card__content__answer">
                     <span>Python é uma linguagem de programação de alto nível, de propósito geral, interpretada e com uma sintaxe clara e legível. Ela foi projetada para ser fácil de aprender e usar, incentivando a programação orientada a objetos (OOP), além de permitir a programação imperativa e funcional. Python combina simplicidade com uma rica biblioteca padrão, tornando-o versátil para uma ampla gama de aplicações, desde scripts simples até sistemas complexos, como inteligência artificial e desenvolvimento web.</span>
                 </div>
             </article>
             
+            <!-- Outros cartões seguem o mesmo formato -->
             <article class="card">
                 <div class="card__content-header">
                     <h3>JavaScript</h3>
-                    
                     <img src="./assets/images/js.jpeg" alt="Icone do JavaScript">
                 </div>
                 <div class="card__content__issue">
@@ -41,11 +55,11 @@
                     <span>JavaScript é uma linguagem de programação de alto nível e interpretada, amplamente usada para desenvolvimento web, tanto no lado do cliente quanto no lado do servidor (com Node.js). Ela permite adicionar interatividade e comportamentos dinâmicos a páginas web. JavaScript é conhecida por ser uma linguagem flexível, com tipagem dinâmica, e que pode ser usada em conjunto com HTML e CSS para criar experiências de usuário ricas.</span>
                 </div>
             </article>
-            
+
+            <!-- Cartão sobre Java -->
             <article class="card">
                 <div class="card__content-header">
                     <h3>Java</h3>
-
                     <img src="./assets/images/java.png" alt="Icone do Java">
                 </div>
                 <div class="card__content__issue">
@@ -55,11 +69,11 @@
                     <span>Java é uma linguagem de programação de propósito geral, orientada a objetos, e fortemente tipada. Ela foi projetada para ter o menor número possível de dependências de implementação, tornando-a altamente portável entre plataformas. Java é amplamente utilizada no desenvolvimento de aplicativos corporativos, dispositivos móveis (principalmente no desenvolvimento de Android), e sistemas distribuídos. Sua filosofia "escreva uma vez, rode em qualquer lugar" a tornou muito popular no desenvolvimento de software.</span>
                 </div>
             </article>
-            
+
+            <!-- Cartão sobre PHP -->
             <article class="card">
                 <div class="card__content-header">
                     <h3>PHP</h3>
-
                     <img src="./assets/images/php.png" alt="Icone do PHP">
                 </div>
                 <div class="card__content__issue">
@@ -73,6 +87,7 @@
         </section>
     </main>
 
+    <!-- Rodapé da página com informações sobre o autor e a finalidade do projeto -->
     <footer>
         <div class="footer-container">
             <p>
@@ -86,6 +101,7 @@
         </div>
     </footer>    
 
+    <!-- Importa o arquivo JavaScript para o comportamento interativo dos cartões -->
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>
