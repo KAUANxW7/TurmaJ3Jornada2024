@@ -81,6 +81,7 @@ Em resumo, o CSS traz estilo e organização à estrutura HTML, melhorando a exp
     height: 175px; /* Define a altura fixa para a imagem */
     object-fit: contain; /* Ajusta a imagem para cobrir o espaço sem distorção */
     border-radius: .8rem; /* Arredonda levemente as bordas da imagem */
+    background-color: #f1f1f1; /* Adicionando uma core de fundo para a imagem */
 }
 
 /* Estilos para perguntas e respostas */
