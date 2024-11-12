@@ -15,7 +15,7 @@ Em resumo, o CSS traz estilo e organização à estrutura HTML, melhorando a exp
     max-width: 1200px; /* Limita a largura máxima para 1200px para telas maiores */
     margin: 0 auto; /* Centraliza o contêiner horizontalmente */
     padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
-    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    background-color: #ffaa00df; /* Cor de fundo cinza claro */
     border-radius: 10px; /* Arredonda as bordas */
     align-items: center; /* Centraliza os itens dentro do contêiner */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do contêiner */
